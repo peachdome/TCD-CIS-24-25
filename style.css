@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li::before {
+    content: "➤";
+    color: #ff6347; 
+    font-size: 1.2rem; 
+    position: absolute;
+    left: -20px;
+}
+
+nav a {
+    color: #1e90ff; 
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #32cd32; 
+}
+
+nav a:visited {
+    color: #8a2be2; 
+}
+
+nav a:active {
+    color: #ff4500; 
+}
+
+header {
+    background-color: #4caf50; 
+    padding: 20px;
+}
+
+main {
+    width: calc(70% - 1px);
+    float: left;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+
+footer {
+    clear: both;
+    background-color: #4caf50;
+    text-align: center;
+    padding: 1rem;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    padding: 1rem;
+}
