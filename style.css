@@ -1,20 +1,18 @@
-/* Reset default margin and set base font */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
-/* Centered page layout using Flexbox */
 .wrapper {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     gap: 2rem;
+    flex-direction: column; /* Stack header, content, and footer vertically */
 }
 
-/* Header styling */
 header {
     background-color: #4caf50;
     color: white;
@@ -22,7 +20,6 @@ header {
     text-align: center;
 }
 
-/* Navigation styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -62,24 +59,27 @@ nav a:active {
     color: #ff4500;
 }
 
-/* Main content area */
-main {
-    flex: 3;
-    padding: 1rem;
-    background-color: white;
-    border-right: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
-
-/* Sidebar */
-aside {
+.container {
+    display: flex;
     flex: 1;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    background-color: white; 
 }
 
-/* Footer */
+main {
+    width: calc(70% - 1px);
+    padding: 1rem;
+
+}
+
+aside {
+    width: 300px; 
+    padding: 20px; 
+    position: absolute;
+    right: 0;
+    top: 200px;
+
+}
+
 footer {
     background-color: #4caf50;
     color: white;
@@ -87,3 +87,9 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+img {
+    width: 200px;
+    height: auto;
+}
+
